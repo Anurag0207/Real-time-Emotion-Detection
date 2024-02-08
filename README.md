@@ -1,22 +1,23 @@
-# Real-time-Emotion-Detection
-Real-Time Emotion Detection with TensorFlow
-This project implements real-time emotion detection using a convolutional neural network (CNN) model trained on facial expression images. The model is built using TensorFlow and Keras, and it detects emotions such as anger, disgust, fear, happiness, neutral, sadness, and surprise.
+#Real-time Emotion Detection with TensorFlow
+##Overview
+Real-Time Emotion Detection project utilizes a Convolutional Neural Network (CNN) model trained on facial expression images to detect seven emotions: anger, disgust, fear, happiness, neutral, sadness, and surprise. The model is implemented using TensorFlow and Keras and deployed in real-time using OpenCV for webcam capture.
 
-Model Architecture
-The emotion detection model architecture consists of multiple layers of separable convolutional, activation, batch normalization, dropout, and pooling layers. The architecture is defined in the model.py file using the TensorFlow and Keras APIs.
+##Model Architecture
+The emotion detection model architecture is built with TensorFlow and Keras APIs. It consists of multiple layers including separable convolutional, activation, batch normalization, dropout, and pooling layers. For detailed implementation, refer to model.py.
 
-Training
-The model is trained using a dataset of facial expression images. The training process is implemented in the train.py file, which includes data preprocessing, model training, and evaluation. The best weights of the trained model are saved to a file for later use in real-time detection.
+##Training
+The model is trained using a labeled dataset of facial expression images. The training process, implemented in train.py, includes data preprocessing, model training, and evaluation. The best weights of the trained model are saved to a file for later use in real-time detection.
 
-Real-Time Emotion Detection
-Real-time emotion detection is achieved using OpenCV for webcam capture and the pre-trained model. The model architecture and weights are loaded from files, and then the webcam feed is processed frame by frame. Emotion labels are assigned to each frame based on the model predictions, and the detected emotions are overlayed on the video feed.
+##Real-Time Emotion Detection
+Real-time emotion detection is achieved by loading the pre-trained model and weights using OpenCV for webcam capture. The webcam feed is processed frame by frame, and emotion labels are assigned to each frame based on model predictions. Detected emotions are overlayed on the video feed.
 
-Getting Started
-To use this project, follow these steps:
+##Getting Started
+To use this project:
 
 Clone the repository to your local machine.
-Install the required dependencies by running pip install -r requirements.txt.
-Train the model using python train.py.
+Install the required dependencies listed in requirements.txt.
+Download the dataset from Google Drive.
+Train the model by running python train.py.
 Run real-time emotion detection using python real_time_emotion_detection.py.
 Dependencies
 TensorFlow
@@ -25,6 +26,6 @@ OpenCV
 NumPy
 Pandas
 Scikit-learn
-Acknowledgments
+##Acknowledgments
 The model architecture and training code are inspired by research in facial expression recognition.
-The emotion detection labels are based on commonly used categories in emotion analysis.
+Emotion detection labels are based on commonly used categories in emotion analysis.
